@@ -2,7 +2,7 @@
 
 We added to CGE capability to read 16-bit and higher precision image formats:
 
-- 16-bit PNG images can be loaded to float-based image formats: `TGrayscaleFloatImage`, `TRGBFloatImage`, (TODO) `TRGBAlphaFloatImage`.
+- 16-bit PNG images can be loaded to float-based image formats: `TGrayscaleFloatImage`, `TRGBFloatImage`, `TRGBAlphaFloatImage`.
 
     This happens both when PNG are read using `LibPng` (default) (TODO) and Vampyre Imaging Library (fallback).
 
@@ -14,7 +14,7 @@ We added to CGE capability to read 16-bit and higher precision image formats:
 
     - https://github.com/castle-engine/castle-image-viewer branch `extra-image-formats` for working example doing it.
 
-- New float-based image formats `TGrayscaleFloatImage`, (TODO) `TRGBAlphaFloatImage`.
+- New float-based image formats `TGrayscaleFloatImage`, `TRGBAlphaFloatImage`.
 
     The float-based image formats (both 2 new formats, and 1 old format `TRGBFloatImage`) are also uploaded to GPU as float textures, thus could be used to process this data on GPU in shaders.
 
