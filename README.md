@@ -32,7 +32,7 @@ See https://forum.castle-engine.io/t/request-for-tif-support/1240/26 for forum t
 
 ![Screenshot with heightmap and diffuse texture](screenshot-with-diffuse.jpeg)
 ![Screenshot with heightmap](screenshot-no-diffuse.jpeg)
-![Huge TIFF in castle-image-viewer](screenshot-image-viewer-tiff.jpeg)
+![Huge TIFF in castle-image-viewer](screenshot-image-viewer-tiff.png)
 
 ## Thank you
 
