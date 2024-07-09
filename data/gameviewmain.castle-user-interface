@@ -1,0 +1,188 @@
+{
+  "$$ClassName" : "TCastleUserInterface",
+  "FullSize" : true,
+  "Name" : "RootGroup",
+  "$Children" : [
+    {
+      "$$ClassName" : "TCastleLabel",
+      "ColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent",
+        "Blue" : 1.7647059261798859E-001,
+        "Green" : 6.1176472902297974E-001,
+        "Red" : 9.8823529481887817E-001
+      },
+      "FontSize" : 2.0000000000000000E+001,
+      "HorizontalAnchorParent" : "hpRight",
+      "HorizontalAnchorSelf" : "hpRight",
+      "Name" : "LabelFps",
+      "Text" : [
+        "FPS: xxx"
+      ],
+      "TranslationPersistent" : {
+        "$$ClassName" : "TCastleVector2Persistent",
+        "X" : -2.0000000000000000E+001,
+        "Y" : -2.0000000000000000E+001
+      },
+      "VerticalAnchorParent" : "vpTop",
+      "VerticalAnchorSelf" : "vpTop"
+    },
+    {
+      "$$ClassName" : "TCastleViewport",
+      "Background" : "Background1",
+      "Camera" : "Camera1",
+      "FullSize" : true,
+      "Items" : {
+        "$$ClassName" : "TCastleRootTransform",
+        "PhysicsProperties" : {
+          "$$ClassName" : "TPhysicsProperties",
+          "LayerCollisions" : {
+            "$$ClassName" : "TCastleLayerCollisions"
+          },
+          "LayerNames" : {
+            "$$ClassName" : "TCastleLayerNames"
+          }
+        },
+        "$Children" : [
+          {
+            "$$ClassName" : "TCastleCamera",
+            "Name" : "Camera1",
+            "Orthographic" : {
+              "$$ClassName" : "TCastleOrthographic"
+            },
+            "Perspective" : {
+              "$$ClassName" : "TCastlePerspective"
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "W" : 3.0006849765777588E+000,
+              "X" : -7.6661161147058010E-003,
+              "Y" : 9.9528527259826660E-001,
+              "Z" : 9.6687816083431244E-002
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "Y" : 1.0000001192092896E+000
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : -1.6461233139038086E+001,
+              "Y" : 4.3491256713867188E+001,
+              "Z" : -4.5491237640380859E+001
+            }
+          },
+          {
+            "$$ClassName" : "TCastlePointLight",
+            "Intensity" : 1.0000000000000000E+001,
+            "Name" : "PointLight1",
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 4.0000000000000000E+000,
+              "Y" : 5.7967514038085938E+001,
+              "Z" : 1.0000000000000000E+000
+            }
+          },
+          {
+            "$$ClassName" : "TCastleTerrain",
+            "Data" : "TerrainImage1",
+            "Layer1" : {
+              "$$ClassName" : "TCastleTerrainLayer",
+              "Texture" : "castle-data:/Rugged%20Terrain%20with%20Rivers/Rugged%20Terrain%20Diffuse%20PNG.png",
+              "UvScale" : 9.9999997764825821E-003
+            },
+            "Layer2" : {
+              "$$ClassName" : "TCastleTerrainLayer",
+              "Texture" : "castle-data:/Rugged%20Terrain%20with%20Rivers/Rugged%20Terrain%20Diffuse%20PNG.png",
+              "UvScale" : 9.9999997764825821E-003
+            },
+            "Layer3" : {
+              "$$ClassName" : "TCastleTerrainLayer",
+              "Texture" : "castle-data:/Rugged%20Terrain%20with%20Rivers/Rugged%20Terrain%20Diffuse%20PNG.png",
+              "UvScale" : 9.9999997764825821E-003
+            },
+            "Layer4" : {
+              "$$ClassName" : "TCastleTerrainLayer",
+              "Texture" : "castle-data:/Rugged%20Terrain%20with%20Rivers/Rugged%20Terrain%20Diffuse%20PNG.png",
+              "UvScale" : 9.9999997764825821E-003
+            },
+            "Name" : "Terrain1",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+            },
+            "SubdivisionsPersistent" : {
+              "$$ClassName" : "TCastleVector2Persistent",
+              "X" : 1.0240000000000000E+003,
+              "Y" : 1.0240000000000000E+003
+            },
+            "Triangulate" : false,
+            "$NonVisualComponents" : [
+              {
+                "$$ClassName" : "TCastleTerrainImage",
+                "MaxLevel" : 1.0000000000000000E+002,
+                "MinLevel" : 0.0000000000000000E+000,
+                "Name" : "TerrainImage1",
+                "Url" : "castle-data:/Rugged%20Terrain%20with%20Rivers/Rugged%20Terrain%20Height%20Map%20PNG.png"
+              }
+            ]
+          }
+        ]
+      },
+      "Name" : "Viewport1",
+      "$NonVisualComponents" : [
+        {
+          "$$ClassName" : "TCastleBackground",
+          "Name" : "Background1"
+        }
+      ],
+      "$Children" : [
+        {
+          "$$ClassName" : "TCastleWalkNavigation",
+          "Gravity" : false,
+          "MoveSpeed" : 1.0000000000000000E+001,
+          "Name" : "WalkNavigation1"
+        }
+      ],
+      "InternalDesignCamera" : {
+        "$$ClassName" : "TCastleCamera",
+        "Name" : "",
+        "Orthographic" : {
+          "$$ClassName" : "TCastleOrthographic"
+        },
+        "Perspective" : {
+          "$$ClassName" : "TCastlePerspective"
+        },
+        "RotationPersistent" : {
+          "$$ClassName" : "TCastleVector4RotationPersistent",
+          "W" : 3.0006849765777588E+000,
+          "X" : -7.6661463826894760E-003,
+          "Y" : 9.9528527259826660E-001,
+          "Z" : 9.6687778830528259E-002
+        },
+        "ScalePersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent",
+          "Y" : 1.0000001192092896E+000
+        },
+        "TranslationPersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent",
+          "X" : -1.6461233139038086E+001,
+          "Y" : 4.3491256713867188E+001,
+          "Z" : -4.5491237640380859E+001
+        }
+      },
+      "InternalDesignNavigations[dnFly]" : {
+        "$$ClassName" : "TCastleWalkNavigationDesign",
+        "MoveSpeed" : 4.2986625671386719E+001,
+        "Name" : ""
+      },
+      "InternalDesignNavigations[dnExamine]" : {
+        "$$ClassName" : "TCastleExamineNavigationDesign",
+        "Exists" : false,
+        "Name" : ""
+      },
+      "InternalDesignNavigations[dn2D]" : {
+        "$$ClassName" : "TCastle2DNavigationDesign",
+        "Exists" : false,
+        "Name" : ""
+      }
+    }
+  ]
+}
