@@ -30,7 +30,8 @@ See https://forum.castle-engine.io/t/request-for-tif-support/1240/26 for forum t
 
 ## Screenshots
 
-![Screenshot with heightmap and diffuse texture](screenshot-with-diffuse.jpeg)
+![Screenshot with heightmap and diffuse texture - great lakes](screenshot_great_lakes.png)
+![Screenshot with heightmap and diffuse texture - rugged terrain](screenshot-with-diffuse.jpeg)
 ![Screenshot with heightmap](screenshot-no-diffuse.jpeg)
 ![Huge TIFF in castle-image-viewer](screenshot-image-viewer-tiff.png)
 
