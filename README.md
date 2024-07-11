@@ -2,11 +2,18 @@
 
 We added to CGE capability to read 16-bit and higher precision image formats:
 
-- 16-bit PNG images can be loaded to float-based image formats: `TGrayscaleFloatImage`, `TRGBFloatImage`, `TRGBAlphaFloatImage`.
+- 16-bit PNG images can be loaded to 4 float-based image formats:
+
+    - `TGrayscaleFloatImage`,
+    - `TGrayscaleAlphaFloatImage`,
+    - `TRGBFloatImage`,
+    - `TRGBAlphaFloatImage`.
 
     This happens both when PNG are read using `LibPng` (default) and Vampyre Imaging Library (as a fallback).
 
-- Same goes for 16/32-bit TIFF images.
+- Float-based [KTX](https://castle-engine.io/ktx) images can be loaded to 4 float-based image formats mentioned above.
+
+- Likewise, 16/32-bit TIFF images can be loaded to float-based image formats mentioned above.
 
     Note that TIFF reading capability is not enabled by default in CGE. You have to enable TIFF support in your application and distribute the TIFF library (libtiff) with your application. See
 
@@ -14,9 +21,16 @@ We added to CGE capability to read 16-bit and higher precision image formats:
 
     - https://github.com/castle-engine/castle-image-viewer branch `extra-image-formats` for working example doing it. You can compile this to get `castle-image-viewer` with TIFF and JPEG 2000 support.
 
-- New float-based image formats `TGrayscaleFloatImage`, `TRGBAlphaFloatImage`.
+- We have full set of 4 float-based image formats:
 
-    The 3 float-based image formats (2 new formats and 1 old format `TRGBFloatImage`) are also uploaded to GPU as float textures, thus could be used to process this data on GPU in shaders. That is, we don't "lose" the 16-bit information (by rounding it to 8-bit) anywhere on the way to the GPU.
+    - `TGrayscaleFloatImage`,
+    - `TGrayscaleAlphaFloatImage`,
+    - `TRGBFloatImage`,
+    - `TRGBAlphaFloatImage`.
+
+    Previously we only had `TRGBFloatImage`, which was not optimal (in case you only needed grayscale) or missed alpha.
+
+    All the float-based image formats can now be uploaded to GPU as float textures, thus could be used to process this data on GPU in shaders. That is, we don't "lose" the extra precision (from 16/32-bit information or floats) anywhere on the way to the GPU.
 
 This example contains some terrains designed using this feature.
 
