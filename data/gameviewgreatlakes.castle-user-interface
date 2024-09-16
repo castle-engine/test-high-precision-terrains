@@ -89,7 +89,8 @@
           {
             "$$ClassName" : "TCastlePointLight",
             "AttenuationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
+              "$$ClassName" : "TCastleVector3Persistent",
+              "Z" : 0.0000000000000000E+000
             },
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
@@ -119,7 +120,8 @@
           {
             "$$ClassName" : "TCastlePointLight",
             "AttenuationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
+              "$$ClassName" : "TCastleVector3Persistent",
+              "Z" : 0.0000000000000000E+000
             },
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
